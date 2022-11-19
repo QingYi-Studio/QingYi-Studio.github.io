@@ -1744,6 +1744,7 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 		<hr>
 		<h2>項目</h2>
 		<p id="compressed_grass">壓縮草
+			<button type="button" onclick="compressed_grass_download()">Download</button>
 			<button type="button" onclick="compressed_grass_forge_github()">Forge-Github</button>
 			<button type="button" onclick="compressed_grass_forge_gitee()">Forge-Gitee</button>
 			<button type="button" onclick="compressed_grass_fabric_github()">Fabric-Github</button>
@@ -1758,6 +1759,9 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 
 	</div>
 	<script>
+		function compressed_grass_download() {
+			window.open("https://", "_blank");
+		}
 		function compressed_grass_forge_github() {
 			window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge", "_blank");
 		}
