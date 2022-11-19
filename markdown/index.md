@@ -20,6 +20,10 @@
 
 ---
 
+## 一些特殊鏈接
+
+[語文復習](https://grey-wind.github.io/yuwen_fuxi/README.html)
+
 ## 贊助
 
 ![1668823286542](image/index/1668823286542.png)
