@@ -59,3 +59,19 @@
 坦诚对话：hold candid talks
 
 离开/开出/从…出发：depart from
+
+## null
+
+## Thursday  October 13,2022 ; VOL.023 NO.7649
+
+听讲座：get lecture from
+
+在…打开：opened at
+
+被检测到：be detected
+
+报告情况：report case
+
+有关：be related
+
+被转移/调任：be transferred to
