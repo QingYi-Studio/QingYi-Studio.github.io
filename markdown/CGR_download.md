@@ -1,6 +1,6 @@
 [返回](https://grey-wind.github.io/)
 
-本頁面只有大型更新的較新版本和，具體版本請移步GitHub Releases頁面查看
+本页面只有大型更新的较新版本和，具体版本请移步GitHub Releases页面查看
 
 ###### forge
 
