@@ -1737,35 +1737,46 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 <body>
 	<div class="content-wrapper">
 		<p>本页面只有各Minecraft版本的对应最新版本，具体版本请移步GitHub Releases查看</p>
-		<h4>Forge</h4>
+		<h4 style="font-size:25px;">Forge</h4>
+		</style>
 		<img alt="GitHub last commit"
 			src="https://img.shields.io/github/last-commit/Grey-Wind/CompressedGrassReborn-Forge">
 		<img alt="GitHub (Pre-)Release Date"
 			src="https://img.shields.io/github/release-date-pre/Grey-Wind/CompressedGrassReborn-Forge">
 		<img alt="GitHub" src="https://img.shields.io/github/license/Grey-Wind/CompressedGrassReborn-Forge">
 		<br>
-		<select id="forge_version">
-			<option>1.19.2</option>
-			<option>1.18.2</option>
-			<option>1.16.5</option>
-		</select>
-		<button type="button" onclick="forge_download">下载</button>
-		<h4>Fabric</h4>
+		<button type="button" onclick="forge_1_19">Forge1.19.2下载</button>
+		<button type="button" onclick="forge_1_18">Forge1.18.2下载</button>
+		<button type="button" onclick="forge_1_16">Forge1.16.5下载</button>
+		<h4 style="font-size:25px;">Fabric</h4>
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Grey-Wind/CompressedGrassReborn-Fabric">
+		<img alt="GitHub (Pre-)Release Date" src="https://img.shields.io/github/release-date-pre/Grey-Wind/CompressedGrassReborn-Fabric">
 		<img alt="GitHub" src="https://img.shields.io/github/license/Grey-Wind/CompressedGrassReborn-Fabric">
-		<p><a href="download_page/fabric/1.1.0.html">1.1.0(1.19.1)</a></p>
+		<br>
+		<button type="button" onclick="fabric_1_19">Fabric1.19.1下载</button>
+	</div>
+	<div align="middle">
+		<span><h5>镜像站</h5></span>
+		<style>
+			span{
+				font-size: 25px;
+			}
+		</style>
+		<p>暂无</p>
 	</div>
 </body>
 <script>
-	function forge_download() {
-		var select = document.getElementById("forge_version")
-		var options = select.options
-		var F1_19_2 = options[0].text
-		var F1_18_2 = options[1].text
-		var F1_16_5 = options[2].text
-		if (F1_19_2 == "1.19.2") {
-			window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge/releases/download/v6.3.0/CompressedGrassReborn-v6.3.0.jar", "_blank")
-			return false
-		}
+	function forge_1_19() {
+		window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge/releases/download/v6.3.0/CompressedGrassReborn-v6.3.0.jar")
+	}
+	function forge_1_18() {
+		window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge/releases/download/v6.2.0/CompressedGrassReborn-v6.2.0.jar")
+	}
+	function forge_1_16() {
+		window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge/releases/download/v6.0.0/CompressedGrassReborn-v6.0.0.jar")
+	}
+	function fabric_1_19(){
+		window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Fabric/releases/download/v1.1.0/CompressedGrass-1.19.1-v1.1.0.jar")
 	}
 </script>
 
