@@ -1757,11 +1757,14 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 </body>
 <script>
 	function forge_download() {
-		var F1_19_2 = document.getElementById("attitude1")
-		var F1_18_2 = document.getElementById("forge_version")
-		var F1_16_5 = document.getElementById("forge_version")
+		var select = document.getElementById("forge_version")
+		var options = select.options
+		var F1_19_2 = options[0].text
+		var F1_18_2 = options[1].text
+		var F1_16_5 = options[2].text
 		if (F1_19_2 == "1.19.2") {
 			window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge/releases/download/v6.3.0/CompressedGrassReborn-v6.3.0.jar", "_blank")
+			return false
 		}
 	}
 </script>
