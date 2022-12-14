@@ -1,18 +1,18 @@
-# 灰風的博客
+# 灰风的博客
 
-## 關於
+## 关于
 
-本網站為灰風的博客？至少目前是的
+本网站为灰风的博客
 
 下面是一部分我的項目
 
 ---
 
-## 項目
+## 项目
 
-[壓縮草(forge)](https://github.com/Grey-Wind/CompressedGrassReborn-Forge)
+[压缩草(forge)](https://github.com/Grey-Wind/CompressedGrassReborn-Forge)
 
-[壓縮草(fabric)](https://github.com/Grey-Wind/CompressedGrassReborn-Fabric)
+[压缩草(fabric)](https://github.com/Grey-Wind/CompressedGrassReborn-Fabric)
 
 [更多合成表](https://github.com/Grey-Wind/More_synthetic_table)
 
@@ -20,10 +20,10 @@
 
 ---
 
-## 一些特殊鏈接
+## 一些特殊链接
 
-[語文復習](https://grey-wind.github.io/yuwen_fuxi/README.html)
+[语文复习](https://grey-wind.github.io/yuwen_fuxi/README.html)
 
-## 贊助
+## 赞助
 
 ![1668823286542](image/index/1668823286542.png)
