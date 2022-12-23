@@ -1738,7 +1738,6 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 	<div class="content-wrapper">
 		<p>本页面只有各Minecraft版本的对应最新版本，具体版本请移步GitHub Releases查看</p>
 		<h4 style="font-size:25px;">Forge</h4>
-		</style>
 		<img alt="GitHub last commit"
 			src="https://img.shields.io/github/last-commit/Grey-Wind/CompressedGrassReborn-Forge">
 		<img alt="GitHub (Pre-)Release Date"
@@ -1755,12 +1754,16 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 		<br>
 		<button type="button" onclick="fabric_1_19">Fabric1.19.1下载</button>
 		<h5>镜像站</h5>
-		<p>暂无</p>
+		<button type="button" onclick="forge_1_19_mirror">Forge1.19.2镜像站下载</button>
+		<button type="button" onclick="forge_1_18_mirror">Forge1.18.2镜像站下载</button>
+		<button type="button" onclick="forge_1_16_mirror">Forge1.16.5镜像站下载</button>
+		<button type="button" onclick="fabric_1_19_mirror">Fabric1.19.1镜像站下载</button>
 	</div>
 	<br>
 	<div align="middle">
 		<span><h4>bilibili视频</h4></span>
 		<span><h6>模组介绍(旧)</h6></span>
+		<p>如果视频无法加载或播放,纯属正常</p>
 		<video src="/videos/compressed_grass/introduce.mp4" width="480" height="270" controls></video>
 	</div>
 </body>
@@ -1776,6 +1779,18 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 	}
 	function fabric_1_19(){
 		window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Fabric/releases/download/v1.1.1/CompressedGrass-1.19.1-v1.1.1.jar")
+	}
+	function forge_1_19_mirror() {
+		window.open("https://gitee.com/at-studio/Mods/blob/main/CompressedGrass/CompressedGrassReborn-v6.6.0-1.19.2.jar")
+	}
+	function forge_1_18_mirror() {
+		window.open("https://gitee.com/at-studio/Mods/blob/main/CompressedGrass/CompressedGrassReborn-v6.2.0-1.18.2.jar")
+	}
+	function forge_1_16_mirror() {
+		window.open("https://gitee.com/at-studio/Mods/raw/main/CompressedGrass/CompressedGrassReborn-v6.0.0-1.16.5.jar")
+	}
+	function fabric_1_19(){
+		window.open("https://gitee.com/at-studio/Mods/raw/main/CompressedGrass(Fabric)/CompressedGrass-1.19.1-v1.2.0-pre1.jar")
 	}
 </script>
 
