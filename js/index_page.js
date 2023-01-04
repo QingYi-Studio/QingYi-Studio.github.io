@@ -28,6 +28,3 @@ function example() {
 function example() {
     window.open("", "_blank");
 }
-function unfinished() {
-    alert("此项目未完成,请谅解");
-}
