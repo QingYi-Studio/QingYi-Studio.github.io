@@ -1,5 +1,5 @@
 function compressed_grass_download() {
-    window.open("/html/CGR/index.html", "_blank");
+    window.open("/html/CGR_download.html", "_blank");
 }
 function compressed_grass_forge_github() {
     window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge", "_blank");
