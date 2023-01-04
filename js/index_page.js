@@ -1,5 +1,5 @@
 function compressed_grass_download() {
-    window.open("/html/CGR_Download/CGR_download.html", "_blank");
+    window.open("/html/CGR_download.html", "_blank");
 }
 function compressed_grass_forge_github() {
     window.open("https://github.com/Grey-Wind/CompressedGrassReborn-Forge", "_blank");
@@ -27,7 +27,4 @@ function example() {
 }
 function example() {
     window.open("", "_blank");
-}
-function unfinished() {
-    alert("此项目未完成,请谅解");
 }
