@@ -33,15 +33,15 @@
         var settings = {
             particles: {
                 length: 500, // maximum amount of particles|最大粒子量
-                duration: 2, // particle duration in sec
-                velocity: 100, // particle velocity in pixels/sec
-                effect: -0.75, // play with this for a nice effect
-                size: 30, // particle size in pixels
+                duration: 2, // particle duration in sec|粒子持续时间(秒)
+                velocity: 100, // particle velocity in pixels/sec|粒子速度，单位为像素/秒
+                effect: -0.75, // play with this for a nice effect|用这个来做一个不错的效果
+                size: 30, // particle size in pixels|颗粒大小(像素)
             },
         };
 
         /*
-         * RequestAnimationFrame polyfill by Erik Möller
+         * RequestAnimationFrame polyfill by Erik Möller|使用Erik Möller请求animationframe polyfill
          */
         (function () {
             var b = 0; var c = ["ms", "moz", "webkit", "o"];
@@ -67,7 +67,7 @@
         }());
 
         /*
-         * Point class
+         * Point class|点类
          */
         var Point = (function () {
             function Point(x, y) {
@@ -95,7 +95,7 @@
         })();
 
         /*
-         * Particle class
+         * Particle class|粒子类
          */
         var Particle = (function () {
             function Particle() {
@@ -132,7 +132,7 @@
         })();
 
         /*
-         * ParticlePool class
+         * ParticlePool class|粒子池类
          */
         var ParticlePool = (function () {
             var particles,
@@ -149,7 +149,7 @@
             ParticlePool.prototype.add = function (x, y, dx, dy) {
                 particles[firstFree].initialize(x, y, dx, dy);
 
-                // handle circular queue
+                // handle circular queue|处理循环队列
                 firstFree++;
                 if (firstFree == particles.length) firstFree = 0;
                 if (firstActive == firstFree) firstActive++;
@@ -158,7 +158,7 @@
             ParticlePool.prototype.update = function (deltaTime) {
                 var i;
 
-                // update active particles
+                // update active particles|更新活动粒子
                 if (firstActive < firstFree) {
                     for (i = firstActive; i < firstFree; i++)
                         particles[i].update(deltaTime);
@@ -170,7 +170,7 @@
                         particles[i].update(deltaTime);
                 }
 
-                // remove inactive particles
+                // remove inactive particles|去除停止粒子
                 while (particles[firstActive].age >= duration && firstActive != firstFree) {
                     firstActive++;
                     if (firstActive == particles.length) firstActive = 0;
@@ -179,7 +179,7 @@
 
             };
             ParticlePool.prototype.draw = function (context, image) {
-                // draw active particles
+                // draw active particles|绘制活动粒子
                 if (firstActive < firstFree) {
                     for (i = firstActive; i < firstFree; i++)
                         particles[i].draw(context, image);
@@ -195,7 +195,7 @@
         })();
 
         /*
-         * Putting it all together
+         * Putting it all together|合并
          */
         (function (canvas) {
             var context = canvas.getContext('2d'),
