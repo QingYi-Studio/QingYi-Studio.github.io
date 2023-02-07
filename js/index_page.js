@@ -149,5 +149,5 @@ function example() {
     window.open("", "_blank");
 }
 function yuwen_fuxi() {
-    window.open("https://grey-wind.github.io/yuwen_fuxi/README.html", "_blank");
+    window.open("https://grey-wind.github.io/FuXi/README.html", "_blank");
 }
