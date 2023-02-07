@@ -26,6 +26,7 @@ function more_synthetic_table() {
 function minecraft_mod_build_helper() {
     window.open("https://github.com/Grey-Wind/MinecraftModBuildHelper", "_blank");
 }
+// v2rayN
 function v2rayn() {
     window.open("https://github.com/Grey-Wind/v2rayN-SystemAgentConfiguration", "_blank");
 }
