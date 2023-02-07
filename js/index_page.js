@@ -22,11 +22,12 @@ function compressed_grass_fabric_gitee() {
 function more_synthetic_table() {
     window.open("https://github.com/Grey-Wind/More_synthetic_table", "_blank");
 }
-function example() {
-    window.open("", "_blank");
+// MinecraftModBuildHelper
+function MinecraftModBuildHelper() {
+    window.open("https://github.com/Grey-Wind/MinecraftModBuildHelper", "_blank");
 }
-function example() {
-    window.open("", "_blank");
+function v2rayN() {
+    window.open("https://github.com/Grey-Wind/v2rayN-SystemAgentConfiguration", "_blank");
 }
 function example() {
     window.open("", "_blank");
