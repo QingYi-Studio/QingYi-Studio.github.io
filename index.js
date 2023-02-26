@@ -1,6 +1,6 @@
 // Compressed Grass Download
 function compressed_grass_download() {
-    window.open("/html/CGR_download.html", "_blank");
+    window.open("./html/CGR_download/", "_blank");
 }
 // Compressed Grass Forge Download
 function compressed_grass_forge_github() {
@@ -147,7 +147,7 @@ function example() {
 function example() {
     window.open("", "_blank");
 }
-function example() {
+function hot_word() {
     window.open("", "_blank");
 }
 function yuwen_fuxi() {
