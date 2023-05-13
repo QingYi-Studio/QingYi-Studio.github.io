@@ -30,8 +30,8 @@ function minecraft_mod_build_helper() {
 function v2rayn() {
     window.open("https://github.com/Grey-Wind/v2rayN-SystemAgentConfiguration", "_blank");
 }
-function example() {
-    window.open("", "_blank");
+function novels() {
+    window.open("https://grey-wind.github.io/Novels/", "_blank");
 }
 function example() {
     window.open("", "_blank");
