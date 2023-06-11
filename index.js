@@ -33,8 +33,8 @@ function v2rayn() {
 function novels() {
     window.open("https://grey-wind.github.io/Novels/", "_blank");
 }
-function example() {
-    window.open("", "_blank");
+function files() {
+    window.open("https://grey-wind.github.io/Files/", "_blank");
 }
 function example() {
     window.open("", "_blank");
