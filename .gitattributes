@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+*.toml linguist-language=Rust
+*.md linguist-language=Rust
