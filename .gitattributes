@@ -3,3 +3,11 @@
 
 *.toml linguist-language=Rust
 *.md linguist-language=Rust
+*.nojekyll linguist-language=Rust
+favicon.svg linguist-language=Rust
+fontawesome-webfont.svg linguist-language=Rust
+favicon.png linguist-language=Rust
+*.woff2 linguist-language=Rust
+*.woff linguist-language=Rust
+*.ttf linguist-language=Rust
+*.eot linguist-language=Rust
