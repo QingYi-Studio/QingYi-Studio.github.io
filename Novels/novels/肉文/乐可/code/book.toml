@@ -1,0 +1,6 @@
+[book]
+authors = ["Grey Wind"]
+language = "cn"
+multilingual = false
+src = "src"
+title = "乐可"
