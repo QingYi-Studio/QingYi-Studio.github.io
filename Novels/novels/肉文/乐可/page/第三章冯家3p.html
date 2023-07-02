@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="cn" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第三章 冯家3p - 乐可</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="介绍.html"><strong aria-hidden="true">1.</strong> 介绍</a></li><li class="chapter-item expanded "><a href="第一章小巷.html"><strong aria-hidden="true">2.</strong> 第一章 小巷</a></li><li class="chapter-item expanded "><a href="第二章家教.html"><strong aria-hidden="true">3.</strong> 第二章 家教</a></li><li class="chapter-item expanded "><a href="第三章冯家3p.html" class="active"><strong aria-hidden="true">4.</strong> 第三章 冯家3p</a></li><li class="chapter-item expanded "><a href="第四章公交车.html"><strong aria-hidden="true">5.</strong> 第四章 公交车</a></li><li class="chapter-item expanded "><a href="第五章室友.html"><strong aria-hidden="true">6.</strong> 第五章 室友</a></li><li class="chapter-item expanded "><a href="番外.html"><strong aria-hidden="true">7.</strong> 番外</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">乐可</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第三章-冯家3p"><a class="header" href="#第三章-冯家3p">第三章 冯家3p</a></h1>
+<p>天气有点热，房间里早早地就开了空调。</p>
+<p>但是开空调的原因并不仅仅是为了凉快。乐可坐在书桌上，抬起一只脚，将一只油性笔缓缓送入后穴之中，为了方便，裤子在进门时就已经被脱掉了。</p>
+<p>“恩啊…”他忍不住呻吟。油性笔黑色的笔杆不是很粗，浅浅地插在湿润的小穴之中，又被手指一点点推进深处，黑色的笔身越来越短，最后完全没入穴口。看得冯虎两眼发直蠢蠢欲动，裤裆处也早就鼓起来了。</p>
+<p>“不行，先做完我布置给你的题目。”暴露在少年露骨的目光之下的感觉即羞耻又兴奋，乐可捏住笔杆一端，又轻又慢地抽插起来。</p>
+<p>这种要求是乐可先提出来的。第一次和冯虎上过床后，食髓知味的少年每次补习都会按着他做个不停。有时操得太忘情还会超过补习时间。乐可不想让家长觉得冯虎的成绩完全没有起色，于是和少年规定必须先完成布置的题目才能做爱，但是在此之前，冯虎要求，乐可必须先做点什么来满足他。</p>
+<p>乐可现在已经后悔选用这个方式来，看起来似乎很想要人插他。</p>
+<p>冯虎从裤裆中救出硬得发疼的阴茎，粗大的肉棒从裤裆里伸出来，直挺挺地立着，乐可看得移不开点把它吃进身下的穴里。</p>
+<p>“老师，”少年放下笔，握住自己的肉棒，“你布置的作业我可能做不完了。”</p>
+<p>他故意将分身撸给乐可看，并向乐可展示它的粗大：“但是，我下面的作业做得很好，要不要来仔细检查一下呢？”</p>
+<p>乐可已经顾不上想这次的计划泡汤了。粗又烫的阴茎一插进花穴，就被骚浪的肉壁吸住了。少年迫不及待地抽插起来，并且托起他的双臀，将分身送得更深。乐可小心翼翼地喘息着，努力不要发出呻吟。害怕被发现的焦虑让身体无比敏感，小穴被操干的感觉又实在太美妙，乐可随着抽插节律摆动臀部，使得肉棒能更方便干到花穴上的那点。经过这几个月少年和那群男人们轮流操干，他的身体已经很习惯追求快感了。</p>
+<p>“老师的小穴简直是极品，又紧又爽。”少年赞叹道，粗大的肉棒在小穴内进出不停，淫水从穴口慢慢溢出，随着抽插流得到处都。乐可用力揉捏自己的乳头，双腿也缠住了男人的腰，沉醉在搔痒的媚肉被的男人。男人和冯虎长得有几分相似，但是更加成熟厚重。虽然第一次见面时十分温文尔雅，但是身为家长的威严还是让乐可很拘谨。何况乐可除了前几次是在认认真真教冯虎功课以外，后来每次都是在用身体教他。</p>
+<p>“冯虎和乐老师相处得还不错吧？”男人一边翻着文件，一边问他。</p>
+<p>“恩…相处得很好，冯虎很听话很认真。”乐可连忙说。</p>
+<p>其实他只会在乐可张着双腿，拨开肉穴说快点进来的时候才最听话。乐可比较着父子间的相似度，一边这么想着。后穴忍不住又颤了一颤，感觉精液快要流出来了，他使劲绷紧双臀。</p>
+<p>“老师客气了，我儿子是什么样，做父亲的最清楚。”冯爸爸笑了一下。</p>
+<p>乐可心虚地别过头去，冯爸爸似乎以为这样拆穿太不给面子，又安慰说：“不过我看了一下冯虎最近几次考试的卷子，确实是有进步的。希望你能一直教他。”</p>
+<p>是教他怎么操穴吗？一想到这个，乐可的身体就开始不安分了，灌满精液的肉穴急切地蠕动着，想要把异物推挤出去：“过奖…了，您太瞧得起我了。”</p>
+<p>“冯虎还是个孩子，年轻气盛，希望能多包容他。这孩子挺爱玩，以后有劳乐老师费心了。”男人转过头来，认真又诚恳地对乐可说。</p>
+<p>“哪里，这是应当的，应当的！”乐可连忙说。男人的话让他负罪感强烈，尤其是现在，后穴中还装满了他儿子的精液。他一动不敢动，男人马上发觉了他的异常。</p>
+<p>“你怎么了，乐老师？”男人凑近他，关切地说。</p>
+<p>“没事…”乐可摇摇头，稍微的晃动就让他感觉快要失禁了，温热的精液正被挤出湿漉漉的穴口，滴到裤档里。而刚才，因为收拾得太匆忙，乐可竟没来得及穿内裤。</p>
+<p>“浑身这么僵硬，是身体不舒服吗？”男人继续问。</p>
+<p>“不…是…”乐可连话都快说不出了，他祈祷精液不会弄湿他的裤子。男人大概误会了他的意思，以为他非常难受但在刻意忍耐，二话不说起身将他抱起，放到靠窗的沙发上。</p>
+<p>男人突如其来的动作，让乐可终于没能忍住。穴口一松，湿热的精液源源不断涌出来。他今天穿的是卡其色休闲裤，棉制的面料马上被沾湿了。连男人也感觉到了手中温热的潮湿，他惊讶地看着乐可。乐可脑袋里轰地一声，只觉得又羞耻又愧疚，恨不得去死才好。</p>
+<p>“乐老师，”男人突然说，乐可已经做好被愤怒责骂的准备。</p>
+<p>“冯虎其实和我各个地方都很像。不论是长相，脾气还是性格。”</p>
+<p>并不像责骂的话，乐可不明白男人的意思，他有些不解地看着对方。男人继续说：“甚至感兴趣的东西也一样。你知道我为什么请你做家教吗？”</p>
+<p>乐可摇了摇头。</p>
+<p>“我从一开始就注意到你了。很多人发呆只是在想一些无聊的事而已，”男人凑近乐可，“而你发呆的时候在想什么呢？竟然是一脸失神的表情，是在回味这里被操得欲仙欲死的感觉吗？”</p>
+<p>男人把手伸进乐可两腿之间，隔着着那片湿透的布料揉搓。乐可扭腰挣扎，被男人按住。</p>
+<p>“所以我突然很想知道，这张可爱的小脸在高氵朝时会是什么表情。真可惜，被我儿子先吃到了。怎么样，他操得你爽不爽？”</p>
+<p>乐可震惊地看着男人，连挣扎都忘了。男人脱下他的裤子，非常下流地舔着他的耳朵说：“乐老师，我想检查一下我儿子的作业。”</p>
+<p>男人的手指挖开黏乎乎的穴口，高氵朝过后的花壁是娇艳的殷红色，糊满了白白的精液。男人将手指伸进穴内，在里面用力翻搅抠挖，精水连续不断地流出来，整个臀部和下面的沙发都弄脏了。</p>
+<p>男人笑着说：“看来我的儿子已经做了很多作业。”他抽动手指，因为精水的关系，小穴里又湿又滑，不需要用力就可以插到很深的地方，“老师批改起来很辛苦吧？”</p>
+<p>男人的手指又长又灵活，指甲搔刮内壁的感觉太刺荡漾地让肉棒插进小穴了。但是现在，他没有那个胆子这么做。</p>
+<p>“冯…冯叔叔，请住……住手。”他压抑着已经到嘴边的呻吟，伸手想要推开男人的胸膛。衬衫下强壮的身躯让他浑身更加燥热，他不断躲避着男人插进小穴的手指，嘴里说着：“…冯叔叔，您…您是我的长辈，怎么能做出这种事…”</p>
+<p>乐可徒劳地挣扎着，试图让男人中止这种悖德的行为。只要男人停手，他就马上离开这里，而且绝对不会再来。但是早就兽性大发男人怎么会放过这鲜美的大餐，他抓住乐可的手，扯下领带绑在一起，同时大力拉开他并在一起的双腿，只看了一眼那里，男人就咧嘴笑了起来。</p>
+<p>“还说什么不要不要，阴茎早就硬得流水了。乐老师，你果然是个骚货。”</p>
+<p>乐可红了脸，男人用手指轻轻弹着花茎顶端，肉棒颤巍巍地晃动着，吐出更多淫液来。他不安地看着男人，心底最后的道德感让他想夺门而逃，但是日渐淫荡的身体却……他忍不住看了看男人鼓起的胯间。好大，他舔了舔干燥的嘴唇。但是他仍旧不死心地小声说：“冯叔叔……别…这样………”</p>
+<p>男人笑了一声，低头就含住了乐可的花茎。</p>
+<p>“呜……”乐可捂住嘴，瞪大眼睛看着分身一点点没入男人口中。灵活的舌头刮蹭龟头，轻舔茎身，连下面的囊袋也被嘴唇吸吮。乐可被吸得全身发软，连连射了三次，被男人尽数吞下。</p>
+<p>乐可直楞楞地看着男人，射精的感觉让他脑子一片空白。男人解开裤子拉链，抽出那根沉甸甸的巨物，乐可马上贪婪地看着它。</p>
+<p>“乐老师，想不想来吸一下这根大鸡巴？”男人问他。</p>
+<p>乐可犹豫地看着男人粗大的肉棒，手却鬼使神差般握了上去。又硬又烫，又粗又长，顶端还分泌出一点水来。好想快点尝一尝它的味道，好想快点被它捅到最深处。乐可来回撸动着男人的铁棒，双手沾满了顶端流出的精液。他俯下身，用舌尖轻轻舔了舔硕大的龟头，又咸又腥的味道让他迷醉不已，忍不住张嘴就吸了起来。</p>
+<p>男人玩着乐可两瓣臀肉，又揉又捏，手指沿着股沟一直滑到穴口，分开臀肉，用两根食指轮流浅浅地抽插。插得乐可搔痒难耐，一边高高翘起屁股任他玩弄，一边更卖力地舔吸着男人的肉棒。</p>
+<p>“乐老师的小嘴真会吸。”男人用低沉的声音赞叹，他按住乐可的头，使劲操干着他的小嘴，口水和分泌物将粗大的茎身弄得湿漉漉的。乐可被顶得快喘不过气来，不知道操了多久，男人闷哼一声，狠狠插进他喉咙深处，又地舔走这些咸涩的体液。</p>
+<p>“明明身体这么淫荡，还哭得像个被开苞的处女。”他放肆地操干着淫水直流的花穴。从来没有被干到这么深的地方，而且是用这么粗大的阴茎，乐可爽得浑身直哆嗦。</p>
+<p>男人越操越兴奋，他翻过乐可的身体侧躺，肉棒越捅越深：“小骚货，哥哥的大肉棒操得你美不美？”男人一边猛干一边问他。</p>
+<p>乐可倔强地咬紧牙齿，不说一句话，剧烈起伏的胸口和忍不住弓起的身体出卖了他。看见他的反应，男人低声一笑，换了个角度抽插，次次直捅花心。小穴被操得又酸又涨，好像要被捣烂一样。乐可不断喘息，被强烈的快感逼得五处可逃。</p>
+<p>男人又故意放慢抽插的频率，浅浅地摩擦着花壁。这种轻微的抽插几乎让乐可发狂，小穴里面开始搔痒无比，饥渴地收缩着，他忍不住抬腰磨蹭着男人的肉棒。</p>
+<p>“小骚货，哥哥的大肉棒磨得你美不美？”男人又问他。</p>
+<p>“美…好美！小穴要被大肉棒操化了……”乐可终于丢掉了心中最后的羞耻，他扭着腰，嘴里不断吐出男人们教给他的淫词浪语：“哥哥……用力操，操烂…小骚穴……快……快点、小骚穴还要………哥哥把精液射进来……”</p>
+<p>他的眼角还挂着泪水，此刻却比任何一个荡妇还要来得淫荡，他骚浪地摆动着腰，撩拨得男人兽性大发，拉开双腿疯狂操干这骚水直流的淫穴，结合处的精液在…”他不甘心地说，语气中微带妒意。</p>
+<p>“你还嫩着呢，多学着点。”男人一边插一边说，乐可在上下双重夹击下，忍不住又挺直了腰背：“啊啊……又，又要射了……”他浑身直抖，再次降临的高氵朝爽得他连脚趾头都痉挛起来，挺立的阴茎却只是射出了一点稀薄的精水。</p>
+<p>冯虎忍不住又蠢蠢欲动起来，只干过骚浪地夹着他的肉棒求欢的乐可，如今很想尝试一下把这具身体插到失神的滋味。男人看出了他的想法，抽出了汁水淋漓的大肉棒。乐可不满地扭腰抗议，少年将自己的阴茎对准穴口，扑哧一声插了进去。</p>
+<p>即使插了这么久，小穴里面还是又紧又有弹性，肉壁贪婪地吸吮着少年的肉棒，而且还在微微抽搐。这种快感让少年无法把持，一开始想要细细操弄这迷人肉穴的想法顿时无影无踪，他一把将乐可压在沙发上，屁股飞快地耸动，操得乐可啊啊浪叫，欲仙欲死。而少年也很难一直持续这种激烈的抽插，很快就射了出来。</p>
+<p>他从湿淋淋的小穴抽出肉棒，温热的精液马上从依旧抽搐着的穴口流出。乐可无力地趴在沙发上，双眼涣散，仍旧沉浸在高氵朝后的失神里。</p>
+<p>男人看着儿子的举动，叹了口气：“你啊，太急了，多操几次就不行了。”</p>
+<p>少年摸了摸湿淋淋的肉棒，将上面的淫液放到口中舔吸：“爸爸的大肉棒真厉害，操了那么久都不射…”他看着男人胯下油亮的巨物，又粗又黑，茎身青筋暴起。一想到这东西刚才在小穴里挺动的景象，再看乐可爽得死去活来的样子，少年不禁吞了口口水，问：“爸爸，我能摸一下…你的宝贝吗？”</p>
+<p>少年捧住肉棒，小心翼翼地又摸又捏。粗大的阴茎在他手里变得更加滚烫，茎身青筋遍布，沾满淫液。他忍不住迷醉地低头含弄起来，直到下颌含得发酸，才吐出男人的肉棒。他咽下嘴里的黏液，男人浓厚的气息让他着迷不已。</p>
+<p>“爸爸，也让我尝一下小穴被插的感觉好不好？”少年终于忍不住了，他张开腿，一边抚弄着再次挺立的阴茎，手指沾了点乐可的淫水，慢慢插进自己的后穴里。</p>
+<p>男人有些犹豫，不管这处子穴多么诱人，可毕竟对方是自己疼爱的儿子。在此之前，他也从没想过要奸淫儿子的小穴。</p>
+<p>“看到老师被插得那么爽，我也……很想知道被人干到底是什么感觉。”少年卖力地抠挖着自己的后穴，一圈穴肉被他揉得松软无比，羞涩地含着不断抽插的手指，那是一种未经人事的稚嫩颜色。他皱起眉轻声渴求：“爸，爸爸……”</p>
+<p>儿子淫荡的动作让男人有些惊讶，他也不再犹豫。一把抱起少年的腰，让他翻身跪趴，将菊穴完全暴露出来。第一次摆出这种淫荡的姿势，少年不禁羞红了脸。他扭过头，刚好看到男人将手指捅了进去，他哼了一声，不由自主地绷紧了背部的肌肉。</p>
+<p>乐可无神地看着男人的手指埋在少年双臀间抽插，少年诱人地喘息，一边急切地扭着腰。接着男人抽出手指，将肉棒对准儿子的小穴，一鼓作气插了进去。</p>
+<p>“啊！”少年痛楚地叫出声来，粗大的肉棒第一次楔入这窄小的处子之穴，将细嫩的肉壁满满撑开。小穴里又疼又涨，甚连轻微的呼吸也能感觉到男人粗大肉棒的压迫感，他一边吸气一边难受地说说：“爸爸…你好大……”</p>
+<p>少年痛苦的神色让男人觉得很兴奋，一想到这是从未被人采摘过的少年嫩穴，而且还属于自己的儿子，就恨不得现在就挥动肉棒狠狠操干，再狠狠地爆射在最深处，用精液这张小嘴里打上自己的印记。他隔着衬衫抚摸少年坚硬的乳头，不停地和他舌吻，直吻得他气喘吁吁。</p>
+<p>这种近亲相奸的感觉让男人觉得又爽又刺激。少年发育中的身体已经很接近一个年轻的成熟男人了，他头发凌乱衣衫不整，他的脊背正轻轻颤抖着，不知是因为痛苦还是快感。这种征服的快感让男人再也忍不住了，他按住少年的腰就开始操干起来。</p>
+<p>“好痛！”少年哀叫，“轻一点，别这么快……啊……”男人的抽插让他感受到快被撕裂的痛楚，但是又不完全是痛苦，小穴在肉棒的摩擦下，一阵一阵地，又涨又麻。</p>
+<p>少年被破穴的痛楚神色看起来分外性感，他半张嘴唇，不停地喘息。乐可凑上去，吻住那张湿润的嘴唇，勾住外露的半截舌尖，翻搅吮吸，少年很快与他舌吻起来。男人抱起少年的身体，换成坐位，肉棒插得更深，少年疼得腿根都抽搐起来。</p>
+<p>乐可松开少年的嘴唇，低下头去舔弄他被肉棒塞得满满的穴口，灵巧的舌头时而在穴周滑动，时而爱抚被阴茎填满的穴肉。一边被插入一边舔穴，感觉太刺激了，少年收缩着臀肉，发出难耐的呻吟。</p>
+<p>“怎么样，开始爽了吗”男人抱住儿子，在他脖子上又亲又舔，肉棒一刻不停地操干着他的小穴。乐可也转而用舌头攻占少年的两粒乳头，不时地用牙齿又拉又扯。</p>
+<p>“别…慢点……小穴里面被顶得好酸，爸爸…的肉棒好大………插得好爽……”少年扭着腰，渐渐开始吐出淫词浪语。没想到能从亲儿子口中听到这样淫荡的话来，男人更加兴奋了，他抱起少年坐在身上，绷紧腰臀，肉棒一圈圈地磨着深处的穴肉。从未尝到如此美妙的感觉，少年越发骚浪地扭动着屁股，迎合着肉棒的抽插。</p>
+<p>看着父子乱伦的淫秽场景，乐可也忍不住了，他伸手去摸自己再次硬起的阴茎，并且抠挖淫水直流的小穴。乐可自·慰的样子被男人看在眼里，他摆弄着少年挺立的肉棒，对乐可说：“小骚货，骚穴又想吃大鸡巴了吧？”</p>
+<p>乐可饥渴地看着男人手中的肉棒，男人淫笑着说：“想要就自己插进来。”</p>
+<p>乐可转过身去，抬起屁股，又湿又滑的穴口抵住了少年耸立的肉棒。已经猜到乐可要做什么的少年喘着粗气，身体更加亢奋不已。男人低声笑着，用力一顶，肉棒狠狠操进儿子小穴的同时，儿子的阴茎也猛地插进乐可的穴里。爽得二人同时叫出声来，尤其是自己的儿子。小穴被大肉棒操干着，同时自己的肉棒还插在另外一只穴里。前后夹击的快感让他忘乎所以，只能骚浪地扭腰大叫，任凭男人操干着他的小穴，再带动肉棒去操干另一只小穴。仅仅是这个体位，少年就被操得射了好几次，也终于尝到了将乐可插到失神的滋味。男人狠狠地操干着儿子，肉穴上最搔痒的小点被持续干到的感觉爽得他浑身抽搐，后来还忘乎所以地夹着男人的肉棒，扭腰浪叫着不要男人拔出来，射到里面。最后小穴如愿以尝地被射满了精液，少年无力地跪趴在沙发上，屁股高高翘起，任凭精液从操到合不拢的穴口流下。</p>
+<p>冯氏父子靠在沙发上稍微休息了一下，冯虎的阴茎便又硬了起来，他抱起乐可就插了进去，咕叽一声，不少精液被肉棒从小穴里挤了出来。乐可微微颤动身体，几乎一天都在重复着奸淫和高氵朝，他现在连挣扎的力气都没有了。感觉到少年的肉棒又开始摩擦着小穴，他只能微微摇头，无力地呻吟：“不……不要了………我…我不行了………恩……”</p>
+<p>乐可娇软无力地求饶的样子看起来格外美丽，少年因此亢奋不已，他一边持续操干着红肿的小穴，一边捏住乐可胸口上两颗坚硬的大乳头，又揉又扯，还不时含在嘴里又咬又吸。乐可敏感的身体很快被刺地又吸又舔，又抽又插。最后，两名少年颤抖着搂在一起，一起用嘴巴服侍着男人巨大的肉棒，同时身下不停地耸动抽插，淫水和精液溅得浑身都是。</p>
+<p>高氵朝后的少年失神地坐在沙发上，按摩棒已经挤进了身体深处，依旧嗡嗡地震动着，他的阴茎还插在乐可的穴内，饥渴的穴肉像一张不断吮吸的小嘴，挤压着肉棒吐出更多精液。乐可也一副爽到失神的表情，全身都因为高氵朝的余韵不停颤抖。</p>
+<p>男人将乐可抱在怀里，手指顺着儿子的肉棒插进了乐可还在收缩的小穴里。又多又滑的淫水马上弄湿了他的手指，并且随着抽插不停地流出来。</p>
+<p>“小骚货，水还真多。”男人忍不住说，他抽出手指伸到乐可眼前，命令道：“舔干净。”</p>
+<p>乐可乖巧地伸出舌头舔着男人的手指，他半眯着眼睛，红润的舌头刮弄指尖掌心，似乎那亮晶晶的淫水是无上的美味。男人探进他的嘴里，拨弄柔软的舌肉，口水从合不上的嘴角流到胸口。</p>
+<p>男人用手指在他口腔里抽插，另一只手玩弄着他的乳头。白皙的胸口上殷红的乳珠肿得几乎不能去碰，男人轻巧地揉捏着，手指绕着乳晕打转。乐可的乳头很敏感，稍微玩弄几下，花茎就再次从被淫液弄得粘乎乎的草丛中站了起来。</p>
+<p>乐可倒在男人怀里，被玩弄身体的样子看起来骚浪入骨。少年呆呆地看着，忍不住吻了上去。男人将乐可的双腿分得不能再开，粗大的阴茎抵住还插着一根肉棒的穴口，“来玩个更一脸淫荡：“好棒………”</p>
+<p>男人抱起他的腰，轻轻摩擦起来：“小骚货，说啊，想要哥哥怎么干你？”</p>
+<p>乐可扭着腰说：“两支大肉棒……一起插进来………把小穴……操烂…………快点，小穴就喜欢…………大鸡巴干…………”</p>
+<p>男人搂着乐可，如原以偿地狠狠操干着他的小穴。肉棒被穴肉紧紧裹住，同时还有另一支肉棒紧贴摩擦，再加上后穴里震动不停的按摩棒，三种快感叠加的感觉让少年爽得忘乎所以。他从前面抱着乐可，配合男人的频率，一上一下地抽插着。有时是少年的阴茎刚刚退出一点，男人的阴茎马上飞快地往上一顶，有时是两支阴茎同进同出，一起操干，还有时是龟头打圈磨擦花心。乐可被操得不停浪叫，眼泪和口水一齐流下，插进了两根肉棍的花穴频频收缩。少年被后穴和阴茎传来的快感搞到双腿发软，操到后来，他只能无力地坐在沙发上，任由肉棒插在乐可里面，夹紧按摩棒不断摩擦小穴。男人抱着乐可一直操干，用自己的大阴茎去摩擦儿子稍小的阴茎。三个人在沙发上淫乱地做了一回又一回，整张沙发都沾满了淫水和精夜，甚至流到地板上到处都是，房间里迷漫着浓郁的性爱气息。乐可被干得合不上腿，只要稍微一动，精液就会从小穴里流出来。而冯虎也没有好到哪里去，十多寸的按摩棒一直在他穴内震动不停，爽得他射了一次又一次，直到再也射不出来。后来男人拔出沾满淫水、还在嗡嗡震动的按摩棒，插到乐可身体里，就着被插到松软的肉洞又将他操了一遍。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="第二章家教.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="第四章公交车.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="第二章家教.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="第四章公交车.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
