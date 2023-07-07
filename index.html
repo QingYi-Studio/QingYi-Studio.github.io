@@ -1,78 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-	<title>灰风的博客</title>
-	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="vscode.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunrise Studio</title>
+  <link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<script src="./index.js"></script>
-	
-<script src="https://utteranc.es/client.js"
-        repo="Grey-Wind/Grey-Wind.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-
 <body>
-	<div class="content-wrapper">
-		<nav class="table-of-contents">
-		</nav>
-		<h1 align="center">灰风的博客</h1>
-		<h2>关于</h2>
-		<p>本网站为灰风的博客？至少目前是的</p>
-		<p>下列是我的精选项目</p>
-		<hr>
-		<h2>项目</h2>
-		<p>压缩草
-			<button type="button" onclick="compressed_grass_download()">详情</button>
-			<button type="button" onclick="compressed_grass_forge_github()">Forge-Github</button>
-			<button type="button" onclick="compressed_grass_forge_gitee()">Forge-Gitee</button>
-			<button type="button" onclick="compressed_grass_fabric_github()">Fabric-Github</button>
-			<button type="button" onclick="compressed_grass_fabric_gitee()">Fabric-Gitee</button>
-		</p>
-		<p>更多合成表
-			<button type="button" onclick="more_synthetic_table()">Github</button>
-		</p>
-		<p>Minecraft Forge构建开发环境网络代理配置教程
-			<button type="button" onclick="minecraft_mod_build_helper()">Github</button>
-		</p>
-		<p>v2rayN系统代理设置白名单
-			<button type="button" onclick="v2rayn()">Github</button>
-		</p>
-		<hr>
-		<h2>一些特殊链接</h2>
-		<p>语文复习
-			<button type="button" onclick="yuwen_fuxi()">查看</button>
-		</p>
-		<p>梗词典
-			<button type="button" onclick="hot_word()">前往</button>
-		</p>
-		<p>灰风小说网
-			<button type="button" onClick="novels()">前往</button>
-		</p>
-		<p>文件
-			<button type="button" onClick="files()">前往</button>
-		</p>
-		<h2>赞助</h2>
-		<p>
-			<img src="https://s1.ax1x.com/2023/07/02/pCDeEuD.png" alt="pCBFmd0.png" border="0" />
-		</p>
-		<h2>节日</h2>
-		<a href="./Festival/Valentine.html">
-			<p>
-				<strong>情人节:Valentine's Day</strong>
-			</p>
-		</a>
-	</div>
+  <div class="container">
+    <header>
+      <div class="primary_header">
+        <h1 class="title">Sunrise Studio</h1>
+      </div>
+      <nav class="secondary_header" id="menu">
+        <ul>
+          <li>关于我们</li>
+          <li>我们的工作</li>
+          <li>精选项目</li>
+          <li>服务类别</li>
+          <li>关于客户</li>
+          <li>联系我们</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2 class="noDisplay">主要内容</h2><!--这个不显示-->
+      <article class="left_article">
+        <h3>我们的主要内容</h3>
+        <p>本工作室由Grey-Wind(灰风)在2023年4月创立，内容99.99%均为灰风本人制作。在创立距今的数月内，工作室产出了大量的优秀作品，例如Compressed Grass、Better
+          Real-ESRGAN、JetBrains Activation、FFmpeg Updater等优质项目。&nbsp;</p>
+        <p>本工作室的创始者兼管理者灰风同样是一位优秀的视频创作者，在全网均有账号，总粉丝数已经破500🤣(这话我自己写了都尴尬)。</p>
+        <p>当然，灰风也是开过不少服务器的，例如茶茶服务器(在成员投票下半永久停服)、冰茶拿金私人服务器(由于双方私人原因永久删服)和新人Up主服务器(目前仍然开服，后续转交给杨星)。</p>
+      </article>
+      <aside class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200"
+          class="placeholder" /> </aside>
+    </section>
+    <div class="row">
+      <div class="columns">
+        <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail" /> </p>
+        <h4>TITLE</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+      </div>
+      <div class="columns">
+        <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail" /> </p>
+        <h4>TITLE</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+      </div>
+      <div class="columns">
+        <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail" /> </p>
+        <h4>TITLE</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+      </div>
+      <div class="columns">
+        <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail" /> </p>
+        <h4>TITLE</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+      </div>
+    </div>
+    <div class="row blockDisplay">
+      <div class="column_half left_half">
+        <h2 class="column_title">回到旧版主页</h2>
+      </div>
+      <div class="column_half right_half">
+        <h2 class="back_top">回到顶部</h2>
+        <script>
+          var backToTopButton = document.getElementById("back_top");
+          backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          });
+        </script>
+      </div>
+    </div>
+    <div class="social">
+      <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail" /></p>
+      <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail" /></p>
+      <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail" /></p>
+      <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail" /></p>
+    </div>
+    <footer class="secondary_header footer">
+      <div align="center">
+        <p>
+          <a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">
+            <font color="#CCCCCC">友情链接1</font>
+          </a>
+          <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">
+            <font color="#CCCCCC">友情链接2</font>
+          </a>
+          <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">
+            <font color="#CCCCCC">友情链接3</font>
+          </a>
+          <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">
+            <font color="#CCCCCC">友情链接4</font>
+          </a>
+          <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">
+            <font color="#CCCCCC">友情链接5</font>
+          </a>
+          <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">
+            <font color="#CCCCCC">友情链接6</font>
+          </a>
+          <a>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">
+            <font color="#CCCCCC">友情链接7</font>
+          </a>
+        </p>
+      </div>
+      <div class="copyright">&copy;2023 - <strong>Sunrise Studio(Grey Wind)</strong></div>
+    </footer>
+  </div>
 </body>
-
-<!--
-	打开新页面示例:
-	<a target="_blank" name="navigation" data-url="https://github.com/" href="javascript:void(0);">Github</a>
--->
 
 </html>
