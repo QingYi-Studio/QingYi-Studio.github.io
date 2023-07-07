@@ -35,15 +35,11 @@
     <section>
       <h2 class="noDisplay">主要内容</h2><!--这个不显示-->
       <article class="left_article">
-        <h3>content heading</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur.</p>
+        <h3>我们的主要内容</h3>
+        <p>本工作室由Grey-Wind(灰风)在2023年4月创立，内容99.99%均为灰风本人制作。在创立距今的数月内，工作室产出了大量的优秀作品，例如Compressed Grass、Better
+          Real-ESRGAN、JetBrains Activation、FFmpeg Updater等优质项目。&nbsp;</p>
+        <p>本工作室的创始者兼管理者灰风同样是一位优秀的视频创作者，在全网均有账号，总粉丝数已经破500🤣(这话我自己写了都尴尬)。</p>
+        <p>当然，灰风也是开过不少服务器的，例如茶茶服务器(在成员投票下半永久停服)、冰茶拿金私人服务器(由于双方私人原因永久删服)和新人Up主服务器(目前仍然开服，后续转交给杨星)。</p>
       </article>
       <aside class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200"
           class="placeholder" /> </aside>
@@ -76,10 +72,19 @@
     </div>
     <div class="row blockDisplay">
       <div class="column_half left_half">
-        <h2 class="column_title">LEFT COLUMN</h2>
+        <h2 class="column_title">回到旧版主页</h2>
       </div>
       <div class="column_half right_half">
-        <h2 class="column_title">RIGHT COLUMN</h2>
+        <h2 class="back_top">回到顶部</h2>
+        <script>
+          var backToTopButton = document.getElementById("back_top");
+          backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          });
+        </script>
       </div>
     </div>
     <div class="social">
