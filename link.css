@@ -1,0 +1,10 @@
+/* CSS Document */
+
+a {
+	text-decoration: none;
+    color: inherit;
+}
+
+a:hover::after {
+  content: none !important;
+}
