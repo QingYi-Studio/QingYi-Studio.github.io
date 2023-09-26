@@ -1,8 +1,9 @@
 @media screen and (min-width: 900px) {
     .introduce {
         padding-left: 25%;
-        padding-right: 25%;
+        /* padding-right: 25%; */
         padding: 0 25%;
+        width: 700px;
     }
     
     .history{
