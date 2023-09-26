@@ -1,0 +1,15 @@
+@media screen and (min-width: 900px) {
+    .introduce {
+        padding-left: 25%;
+        padding-right: 25%;
+        padding: 0 25%;
+    }
+    
+    .history{
+        padding-left: 10%;
+    }
+
+    .gw-made {
+        padding-left: 10%;
+    }
+}
